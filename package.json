@@ -1,0 +1,38 @@
+{
+  "name": "@sergetymo/money",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "repository": "git@github.com:sergetymo/money.git",
+  "author": "Serge Tymoshenko <serge@tymo.name>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -cw",
+    "lint": "xo",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.0",
+    "jest": "^26.0.1",
+    "rollup": "^2.11.2",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.5",
+    "xo": "^0.32.0"
+  },
+  "xo": {
+    "space": true,
+    "semicolon": false,
+    "rules": {
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ]
+    }
+  }
+}
